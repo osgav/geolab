@@ -1,0 +1,15 @@
+
+ALTER DEFAULT PRIVILEGES
+  FOR ROLE geolab
+  GRANT USAGE
+  ON SCHEMAS
+  TO geolab_read_access
+;
+
+ALTER DEFAULT PRIVILEGES
+  FOR ROLE geolab
+  GRANT SELECT
+  ON TABLES
+  TO geolab_read_access
+;
+

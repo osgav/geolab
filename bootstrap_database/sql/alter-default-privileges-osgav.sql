@@ -1,0 +1,15 @@
+
+ALTER DEFAULT PRIVILEGES
+  FOR ROLE osgav
+  GRANT USAGE
+  ON SCHEMAS
+  TO geolab_read_access
+;
+
+ALTER DEFAULT PRIVILEGES
+  FOR ROLE osgav
+  GRANT SELECT
+  ON TABLES
+  TO geolab_read_access
+;
+

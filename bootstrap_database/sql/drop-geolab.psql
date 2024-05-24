@@ -1,0 +1,45 @@
+
+\set ECHO queries
+
+\echo
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\echo >>>>>> `date -Ins` 
+\echo >>>>>> dropping the "geolab" database
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DROP DATABASE geolab;
+
+
+\echo
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\echo >>>>>> `date -Ins` 
+\echo >>>>>> dropping the "geolab" role
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DROP OWNED BY geolab;
+DROP ROLE geolab;
+
+
+\echo
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\echo >>>>>> `date -Ins` 
+\echo >>>>>> dropping the "osgav" role
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DROP OWNED BY osgav;
+DROP ROLE osgav;
+
+
+\echo
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\echo >>>>>> `date -Ins` 
+\echo >>>>>> dropping the "qgis" role
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DROP ROLE qgis;
+
+
+\echo
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\echo >>>>>> `date -Ins` 
+\echo >>>>>> dropping the read/write access roles
+\echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DROP ROLE geolab_read_access;
+DROP ROLE geolab_write_access;
+
